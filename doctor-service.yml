@@ -1,2 +1,10 @@
 server:
   port: 8081
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update   # let Hibernate add missing columns
+  sql:
+    init:
+      mode: never        # avoid schema.sql fighting the update (optional but safer)
